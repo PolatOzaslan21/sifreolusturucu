@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güçlü Şifre Oluşturucu | Ücretsiz Online Şifre Üreteci</title>
+  <meta name="description" content="Güçlü ve güvenli şifre oluşturucu. Ücretsiz online şifre üreteci ile rastgele, güçlü şifreler oluşturun. Büyük harf, rakam, sembol seçenekleriyle kişiselleştirin.">
+  <meta name="keywords" content="şifre oluşturucu, güçlü şifre, şifre üreteci, rastgele şifre, güvenli şifre">
+  <link rel="canonical" href="https://polatozaslan21.github.io/sifreolusturucu/">
+  <meta property="og:title" content="Güçlü Şifre Oluşturucu | Ücretsiz Online Şifre Üreteci">
+  <meta property="og:description" content="Güçlü ve güvenli şifre oluşturucu. Ücretsiz online araç.">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://polatozaslan21.github.io/sifreolusturucu/"><meta property="og:locale" content="tr_TR">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"sifreolusturucu","url":"https://polatozaslan21.github.io/sifreolusturucu/"}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="container"><a href="index.html" class="logo">şifre<span>oluşturucu</span></a><ul><li><a href="index.html" class="active">Ana Sayfa</a></li><li><a href="index.html#arac">Araç</a></li><li><a href="index.html#blog">Blog</a></li><li><a href="https://covrixa.com/tr/" target="_blank" rel="noopener">Covrixa</a></li></ul></div></nav>
+<section class="hero"><div class="container"><h1>Ücretsiz Güçlü Şifre Oluşturucu</h1><p>Güvenli, rastgele ve hatırlanması zor şifreler tek tıkla oluşturun.</p></div></section>
+<section class="section" id="arac"><div class="container">
+  <h2>Şifre Oluştur</h2>
+  <div class="calculator-card">
+    <h3>Şifre Ayarları</h3>
+    <div class="form-group"><label for="length">Şifre Uzunluğu: <strong id="len-display">16</strong></label><input type="range" id="length" min="6" max="64" value="16" oninput="document.getElementById('len-display').textContent=this.value;generatePassword()"></div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="upper" checked> Büyük Harfler (A-Z)</label>
+      <label><input type="checkbox" id="lower" checked> Küçük Harfler (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked> Rakamlar (0-9)</label>
+      <label><input type="checkbox" id="symbols" checked> Semboller (!@#$%)</label>
+      <label><input type="checkbox" id="noambig"> Belirsiz Karakterleri Hariç Tut (0,O,l,I)</label>
+    </div>
+    <div class="result-box show" id="pwd-box">
+      <div class="pwd-output" id="pwd-output">Şifre oluşturuluyor...</div>
+      <div style="margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn" onclick="generatePassword()">Yenile</button>
+        <button class="btn btn-outline" onclick="copyPassword()">Kopyala</button>
+      </div>
+      <div id="copy-msg" style="color:var(--accent);font-size:.85rem;margin-top:6px;min-height:18px;"></div>
+      <div style="margin-top:12px;"><label style="font-size:.85rem;font-weight:600;">Güç:</label> <span id="strength-label"></span><div class="strength-bar"><div id="strength-fill"></div></div></div>
+    </div>
+    <div class="form-group" style="margin-top:16px;"><label for="count">Kaç Şifre Oluştur</label><select id="count"><option value="1">1 Şifre</option><option value="5">5 Şifre</option><option value="10">10 Şifre</option></select></div>
+    <button class="btn" style="margin-top:4px;" onclick="generateMultiple()">Toplu Oluştur</button>
+    <div id="multi-result" style="margin-top:16px;"></div>
+  </div>
+</div></section>
+<section class="section" id="blog"><div class="container">
+  <h2>Şifre Güvenliği Rehberleri</h2>
+  <div class="blog-grid">
+    <div class="blog-card"><h3><a href="blog1.html">Güçlü Şifre Nasıl Oluşturulur? 2026 Rehberi</a></h3><p>Güvenli şifre oluşturmanın altın kuralları ve şifre yönetimi ipuçları.</p><div class="meta">4 dk okuma · Temel Rehber</div></div>
+    <div class="blog-card"><h3><a href="blog2.html">Şifre Yöneticisi Kullanmak Güvenli mi?</a></h3><p>Şifre yöneticilerinin avantajları, riskleri ve en iyi seçenekler karşılaştırması.</p><div class="meta">5 dk okuma · Güvenlik</div></div>
+    <div class="blog-card"><h3><a href="blog3.html">Her Hesap İçin Farklı Şifre Neden Önemli?</a></h3><p>Şifre tekrarının tehlikeleri ve credential stuffing saldırıları hakkında bilgi.</p><div class="meta">4 dk okuma · Siber Güvenlik</div></div>
+    <div class="blog-card"><h3><a href="blog4.html">İki Faktörlü Doğrulama (2FA) Nedir?</a></h3><p>2FA nasıl çalışır, neden kullanmalısınız ve hangi uygulamalar önerilir?</p><div class="meta">5 dk okuma · 2FA</div></div>
+    <div class="blog-card"><h3><a href="blog5.html">Şifreniz Ne Kadar Sürede Kırılır?</a></h3><p>Brute force saldırılarına karşı şifre uzunluğu ve karmaşıklığının önemi.</p><div class="meta">5 dk okuma · Güvenlik</div></div>
+  </div>
+</div></section>
+<section class="covrixa-promo"><div class="container"><h3>Daha Fazla Ücretsiz Araç Covrixa'da</h3><p>Şifre oluşturucu, slug üreteci, SEO araçları ve daha fazlası.</p><a href="https://covrixa.com/tr/" class="btn-outline" target="_blank" rel="noopener">Covrixa Araçlarını Keşfet →</a></div></section>
+<footer><div class="container"><p>© 2026 sifreolusturucu · <a href="https://covrixa.com/tr/" target="_blank" rel="noopener">Covrixa</a></p></div></footer>
+<script src="script.js"></script>
+</body></html>
