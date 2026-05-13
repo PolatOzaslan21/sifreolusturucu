@@ -19,7 +19,7 @@
   <h2>Şifre Oluştur</h2>
   <div class="calculator-card">
     <h3>Şifre Ayarları</h3>
-    <div class="form-group"><label for="length">Şifre Uzunluğu: <strong id="len-display">16</strong></label><input type="range" id="length" min="6" max="64" value="16" oninput="document.getElementById('len-display').textContent=this.value;generatePassword()"></div>
+    <div class="form-group">     <label for="length">Şifre Uzunluğu: <strong id="len-display">16</strong></label><input type="range" id="length" min="6" max="64" value="16"></div>
     <div class="checkbox-group">
       <label><input type="checkbox" id="upper" checked> Büyük Harfler (A-Z)</label>
       <label><input type="checkbox" id="lower" checked> Küçük Harfler (a-z)</label>
@@ -30,14 +30,14 @@
     <div class="result-box show" id="pwd-box">
       <div class="pwd-output" id="pwd-output">Şifre oluşturuluyor...</div>
       <div style="margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-        <button class="btn" onclick="generatePassword()">Yenile</button>
-        <button class="btn btn-outline" onclick="copyPassword()">Kopyala</button>
+        <button class="btn" id="btn-refresh">Yenile</button>
+        <button class="btn btn-outline" id="btn-copy">Kopyala</button>
       </div>
       <div id="copy-msg" style="color:var(--accent);font-size:.85rem;margin-top:6px;min-height:18px;"></div>
       <div style="margin-top:12px;"><label style="font-size:.85rem;font-weight:600;">Güç:</label> <span id="strength-label"></span><div class="strength-bar"><div id="strength-fill"></div></div></div>
     </div>
     <div class="form-group" style="margin-top:16px;"><label for="count">Kaç Şifre Oluştur</label><select id="count"><option value="1">1 Şifre</option><option value="5">5 Şifre</option><option value="10">10 Şifre</option></select></div>
-    <button class="btn" style="margin-top:4px;" onclick="generateMultiple()">Toplu Oluştur</button>
+    <button class="btn" id="btn-bulk" style="margin-top:4px;">Toplu Oluştur</button>
     <div id="multi-result" style="margin-top:16px;"></div>
   </div>
 </div></section>
@@ -51,7 +51,7 @@
     <div class="blog-card"><h3><a href="blog5.html">Şifreniz Ne Kadar Sürede Kırılır?</a></h3><p>Brute force saldırılarına karşı şifre uzunluğu ve karmaşıklığının önemi.</p><div class="meta">5 dk okuma · Güvenlik</div></div>
   </div>
 </div></section>
-<section class="covrixa-promo"><div class="container"><h3>Daha Fazla Ücretsiz Araç Covrixa'da</h3><p>Şifre oluşturucu, slug üreteci, SEO araçları ve daha fazlası.</p><a href="https://covrixa.com/tr/" class="btn-outline" target="_blank" rel="noopener">Covrixa Araçlarını Keşfet →</a></div></section>
+<section class="covrixa-promo"><div class="container"><h3>Covrixa'daki Şifre Aracını da Deneyin</h3><p>Daha kapsamlı PIN ve şifre seçenekleri için Covrixa'daki şifre oluşturucuyu da kullanabilirsiniz.</p><a href="https://covrixa.com/tr/" class="btn-outline" target="_blank" rel="noopener">Covrixa'ya Git →</a></div></section>
 <footer><div class="container"><p>© 2026 sifreolusturucu · <a href="https://covrixa.com/tr/" target="_blank" rel="noopener">Covrixa</a></p></div></footer>
 <script src="script.js"></script>
 </body></html>
